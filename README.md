@@ -130,6 +130,14 @@ node cli/makefun.mjs claim --claim <claim-id> --keypair ~/.makefun/keypairs/http
 
 The prize goes to your own Solana wallet. The API rate limit is 300 requests per minute and 50,000 per day, so automated checks should stay well inside those numbers.
 
+## Troubleshooting
+
+**`makefun check` fails on the transcript?** Make sure you bundled the transcript from the same agent session that built the entry, and that the bundle file path in your `check` command points at the fresh `transcripts.tar.gz` — an old bundle from a previous session is the most common cause.
+
+**Login fails or the CLI says you are not authenticated?** Re-run `node cli/makefun.mjs login --origin https://make.fun` from the kit directory and check that `~/.makefun/keypairs/https_make.fun.json` exists afterwards; a login from the wrong directory writes the keypair where the CLI will not find it.
+
+**Your sign-up does not count for the referral?** The referral only attaches if you used the link (or entered code `vfx9f6b2`) when you created the account — it cannot be added to an existing account afterwards, so double-check the code is shown during sign-up, before you finish creating it.
+
 ## Or let your agent do all of it
 
 If you would rather not click through every step yourself, hand the whole flow to your agent: sign up, pick a bounty, fetch the kit, build, bundle the transcript, check, and submit. Give it this guide as its starting point and tell it to report back at each step. You stay in charge of the decisions — which bounty, when to submit, when to claim — and the agent handles the typing.
@@ -163,6 +171,12 @@ Late entries are not accepted. Submit early enough that a failed check still lea
 
 **How do I get paid?**
 Winners claim USDC to their own Solana wallet with the kit CLI claim command above.
+
+**How long does it take to get my referral sign-up counted?**
+Sign-ups through your link are verified as human sign-ups, so they are not instant — allow time for verification before the score updates, and check the bounty leaderboard rather than refreshing your own dashboard every few minutes.
+
+**Can I change my entry after I submit it?**
+Yes, while the bounty is still open and you have submissions left. Submit the improved version the same way as the first one, with the new commit SHA and a fresh transcript bundle from the session that made the changes — do not reuse the old bundle.
 
 ## Links
 
