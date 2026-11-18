@@ -10,7 +10,9 @@
 
 Referral code: `vfx9f6b2`
 
-That link takes you straight to the sign-up page. Create your account, pick a bounty that looks fun, and let an AI coding agent do the building while you watch it work. If you have ever wanted to earn from software without writing every line yourself, this is the shortest path in.
+That link takes you straight to the sign-up page. Enter the code when you create your account so your sign-up is tied to this referral. Then pick a bounty that looks fun and let an AI coding agent do the building while you watch it work. If you have ever wanted to earn from software without writing every line yourself, this is the shortest path in.
+
+This guide was written for the bring-the-humans-02 bounty, which closes on 21 November at 17:30 WIB — so if you want your sign-up to count for it, join sooner rather than later.
 
 ## Try it without risking money
 
@@ -41,6 +43,10 @@ You do not have to be a professional developer. The agent writes the code; your 
 
 That is the whole list. No paid tools, no special hardware, no course to finish first.
 
+## What a good first bounty looks like
+
+If this is your first time, favour a bounty whose task you can explain in one sentence, whose deadline gives you at least a full evening of building time, and whose kit has a clear README of its own. Skip anything whose requirements you cannot picture as a finished app — a vague task makes a vague entry, and vague entries do not win. Your first entry is for learning the flow; the second one is for winning.
+
 ## Step 1 — Create your account
 
 Go to [https://make.fun/r/vfx9f6b2](https://make.fun/r/vfx9f6b2) and sign up with referral code `vfx9f6b2`.
@@ -55,13 +61,7 @@ Check the bounty page for its rules, its prerequisites, and whether it has an en
 
 ## Step 3 — Grab the kit
 
-Every bounty ships with a starter kit: the files, instructions, and checks you need to build a valid entry. Download the kit for your bounty:
-
-```bash
-# replace <slug> with the bounty slug, e.g. gta6-01
-# kit download URL pattern:
-https://make.fun/c/<slug>/kit
-```
+Every bounty ships with a starter kit: the files, instructions, and checks you need to build a valid entry. Download the kit for your bounty from `https://make.fun/c/<slug>/kit`, replacing `<slug>` with the bounty slug (for example, `gta6-01`).
 
 Then see what the kit CLI can do:
 
@@ -84,6 +84,13 @@ Point your AI coding agent at the kit and the bounty task, and let it build. Giv
 Keep one rule in mind from the start: **your agent session transcript is required with every entry** (since 17 November 2026). An entry without a transcript is rejected, no matter how good the code is. Make sure your agent records its session and that you bundle the transcript when you submit.
 
 Work in a public GitHub repository, commit as you go, and keep the final commit clean — that commit is what you submit.
+
+Before you move on, run through this short checklist:
+
+- [ ] The app runs and does what the bounty asked for
+- [ ] The kit checks pass on your entry
+- [ ] The agent session transcript is bundled
+- [ ] Your latest code is committed and pushed to a public repo
 
 ## Step 5 — Submit your entry
 
@@ -129,7 +136,7 @@ If you would rather not click through every step yourself, hand the whole flow t
 
 ## Get your own referral link
 
-Once you have an account, you get your own referral link too. Share it the way this guide shared mine: put it at the top of your own getting-started repo, in your posts, or anywhere people who would enjoy this can find it. Human sign-ups through your link are what this bounty scores.
+Once you have an account, you get your own referral link too. Share it the way this guide shared mine: put it at the top of your own getting-started repo, in your posts, or anywhere people who would enjoy this can find it. Human sign-ups through your link are what this bounty scores, so a guide that genuinely helps a newcomer is worth more than a bare link dropped in a chat.
 
 ## FAQ
 
@@ -147,6 +154,12 @@ Any coding agent that can work in a repository, run commands, and record a sessi
 
 **Why is a transcript required?**
 Since 17 November 2026, every entry must include the agent session transcript. It proves the work was done by an agent session, and entries without it are rejected.
+
+**Can I enter more than one bounty?**
+Yes. Each bounty is separate, with its own kit, deadline, and prize. Finish one entry properly before you start the next, rather than half-building two.
+
+**What happens if I miss the deadline?**
+Late entries are not accepted. Submit early enough that a failed check still leaves you time to fix and resubmit.
 
 **How do I get paid?**
 Winners claim USDC to their own Solana wallet with the kit CLI claim command above.
